@@ -7,6 +7,7 @@ public class RentalVcd extends Vcd  {
     }
     public RentalVcd(String judul , String aktor , String sutradara ,String publisher,String kategori , int stock){
         super(judul,aktor,sutradara,publisher,kategori);
+        setStock(stock);
     }
 
 
