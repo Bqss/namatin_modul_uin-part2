@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="395.0" prefWidth="864.0" styleClass="label" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sembilan.Controller">
+   <children>
+      <Label layoutX="215.0" layoutY="41.0" prefHeight="41.0" prefWidth="170.0" styleClass="heading" text="Data mahasiswa">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField id=" tfid" fx:id="tfid" layoutX="224.0" layoutY="112.0" prefHeight="25.0" prefWidth="241.0" />
+      <TextField id="tfnama" fx:id="tfnama" layoutX="224.0" layoutY="157.0" prefHeight="25.0" prefWidth="242.0" />
+      <TextField id="tfalamat" fx:id="tfalamat" layoutX="224.0" layoutY="206.0" prefHeight="25.0" prefWidth="242.0" />
+      <Label layoutX="56.0" layoutY="112.0" prefHeight="25.0" prefWidth="85.0" text="ID_mahasiswa" />
+      <Label layoutX="56.0" layoutY="157.0" prefHeight="25.0" prefWidth="101.0" text="nama mahasiswa" />
+      <Label layoutX="56.0" layoutY="206.0" prefHeight="25.0" prefWidth="102.0" text="Alamat mahasiswa" />
+      <Button id="btnsave" fx:id="btnsave" layoutX="56.0" layoutY="283.0" mnemonicParsing="false" onAction="#submit" text="Simpan" />
+      <Button id="btnreset" fx:id="btnreset" layoutX="141.0" layoutY="283.0" mnemonicParsing="false" onAction="#hapus" text="Reset " />
+      <Button id="bthupdate" fx:id="btnupdate" layoutX="224.0" layoutY="283.0" mnemonicParsing="false" onAction="#update" text="Ubah" />
+      <Button id="btndelete" fx:id="btndelete" layoutX="301.0" layoutY="283.0" mnemonicParsing="false" onAction="#removeFromTable" text="Hapus" />
+      <Button id="btnout" fx:id="btnout" layoutX="385.0" layoutY="283.0" mnemonicParsing="false" text="Keluar" />
+      <TableView fx:id="tabel" layoutX="484.0" layoutY="82.0" prefHeight="225.0" prefWidth="362.0">
+        <columns>
+          <TableColumn fx:id="id_inp" prefWidth="87.40676879882812" text="id" />
+          <TableColumn fx:id="nama_inp" prefWidth="84.25421142578125" text="Nama" />
+            <TableColumn fx:id="alamat_inp" prefWidth="188.74582407139633" text="Alamat" />
+        </columns>
+      </TableView>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
