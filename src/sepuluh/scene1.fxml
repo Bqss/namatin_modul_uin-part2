@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="475.0" prefWidth="845.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sepuluh.Controller">
+   <children>
+      <Label layoutX="334.0" layoutY="33.0" text="Data Mahasiswa " />
+      <Label layoutX="56.0" layoutY="241.0" text="Alamat" />
+      <Label layoutX="56.0" layoutY="181.0" text="Nama" />
+      <Label layoutX="56.0" layoutY="122.0" text="Id" />
+      <TextField fx:id="tf1" layoutX="136.0" layoutY="118.0" prefHeight="25.0" prefWidth="214.0" />
+      <TextField fx:id="tf2" layoutX="136.0" layoutY="177.0" prefHeight="25.0" prefWidth="214.0" />
+      <TextField fx:id="tf3" layoutX="136.0" layoutY="237.0" prefHeight="25.0" prefWidth="214.0" />
+      <TableView fx:id="tabel" layoutX="374.0" layoutY="102.0" onMouseClicked="#load" prefHeight="200.0" prefWidth="415.0">
+        <columns>
+          <TableColumn fx:id="id_col" prefWidth="96.38983154296875" text="ID" />
+          <TableColumn fx:id="nama_col" prefWidth="159.15252685546875" text="Nama" />
+            <TableColumn fx:id="alamat_col" prefWidth="160.5762939453125" text="Alamat" />
+        </columns>
+      </TableView>
+      <Button layoutX="44.0" layoutY="305.0" mnemonicParsing="false" onAction="#saveData" text="save" />
+      <Button layoutX="94.0" layoutY="305.0" mnemonicParsing="false" onAction="#updateData" text="Update" />
+      <Button layoutX="161.0" layoutY="305.0" mnemonicParsing="false" onAction="#deleteData" text="Delete" />
+      <Button layoutX="222.0" layoutY="305.0" mnemonicParsing="false" onAction="#clear" text="clear" />
+      <Button layoutX="276.0" layoutY="305.0" mnemonicParsing="false" onAction="#exit" text="exit" />
+      <TextField fx:id="tf4" layoutX="136.0" layoutY="360.0" onKeyTyped="#search" prefHeight="25.0" prefWidth="416.0" />
+      <Label layoutX="56.0" layoutY="364.0" text="Search" />
+      <Button layoutX="136.0" layoutY="398.0" mnemonicParsing="false" onAction="#search" text="Cari" />
+      <Button layoutX="184.0" layoutY="398.0" mnemonicParsing="false" onAction="#getAllData" text="All Data" />
+   </children>
+</AnchorPane>
